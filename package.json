@@ -1,0 +1,32 @@
+{
+  "name": "activecampaign-api",
+  "version": "1.0.0",
+  "description": "Node.js client for ActiveCampaign API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/betsol/node-activecampaign-api.git"
+  },
+  "keywords": [
+    "ActiveCampaign",
+    "API",
+    "Client",
+    "Integration",
+    "HTTP",
+    "Request",
+    "Promise",
+    "E-Mail Marketing"
+  ],
+  "author": "Slava Fomin II",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betsol/node-activecampaign-api/issues"
+  },
+  "homepage": "https://github.com/betsol/node-activecampaign-api#readme",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "request": "^2.76.0",
+    "request-promise": "^4.1.1",
+    "require-directory": "^2.1.1"
+  }
+}

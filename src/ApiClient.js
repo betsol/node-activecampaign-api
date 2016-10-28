@@ -72,13 +72,13 @@ class ApiClient {
       options.requestOptions || {}
     );
     if (this.config.debug) {
-      console.log('Making request to ActiveCampaign', requestOptions);
+      console.log('Making request to ActiveCampaign', __debugValues(requestOptions));
     }
     return request(requestOptions)
       .then(response => {
         let result = JSON.parse(response);
         if (this.config.debug) {
-          console.log('Got response from ActiveCampaign', result);
+          console.log('Got response from ActiveCampaign', __debugValues(result));
         }
         return result;
       })
@@ -88,3 +88,12 @@ class ApiClient {
 }
 
 module.exports = ApiClient;
+
+
+function __debugValues () {
+  let value = arguments;
+  if (1 == arguments.length) {
+    value = arguments[0];
+  }
+  return json.stringify(value, null, 4);
+}

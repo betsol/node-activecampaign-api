@@ -95,5 +95,5 @@ function __debugValues () {
   if (1 == arguments.length) {
     value = arguments[0];
   }
-  return json.stringify(value, null, 4);
+  return JSON.stringify(value, null, 4);
 }
